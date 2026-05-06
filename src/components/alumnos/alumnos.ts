@@ -22,4 +22,5 @@ export class Alumnos implements OnInit{
       this.alumnos = data;
     })
   }
+  
 }
