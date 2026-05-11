@@ -9,7 +9,7 @@ import { environment } from '../environments/environment';
 })
 export class ProfesorService {
   
-  private baseUrl = 'http://localhost:8080/profesor';
+  private baseUrl = environment.apiUrl + '/profesor';
 
   constructor(
     private _httpClient: HttpClient

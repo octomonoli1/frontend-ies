@@ -9,7 +9,7 @@ import { environment } from '../environments/environment';
 })
 export class AsignaturaService {
     
-  private baseUrl = 'http://localhost:8080/asignatura';
+  private baseUrl = environment.apiUrl + '/asignatura';
 
   constructor(
     private _httpClient: HttpClient
