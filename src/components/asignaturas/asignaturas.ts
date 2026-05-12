@@ -1,11 +1,12 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
 import { Asignatura } from '../../model/asignatura';
 import { AsignaturaService } from '../../services/asignatura-service';
 
 @Component({
   selector: 'app-asignaturas',
-  imports: [CommonModule],
+  imports: [CommonModule, RouterLink],
   templateUrl: './asignaturas.html',
   styleUrl: './asignaturas.css',
 })
