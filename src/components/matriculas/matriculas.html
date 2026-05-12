@@ -1,0 +1,23 @@
+<h2>Listado de alumnos</h2>
+
+<table class="tabla">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Curso</th>
+      <th>Nota media</th>
+      <th>Alumno</th>
+      <th>Asignatura</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr *ngFor="let matricula of matriculas">
+      <td>{{ matricula.idMat }}</td>
+      <td>{{ matricula.curso }}</td>
+      <td>{{ matricula.notaMedia }}</td>
+      <td>{{ matricula.alumno.nombre }}</td>
+      <td>{{ matricula.asignatura.nombre }}</td>
+    </tr>
+  </tbody>
+</table>
