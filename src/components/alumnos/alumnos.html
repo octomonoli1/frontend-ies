@@ -7,6 +7,7 @@
       <th>Nombre</th>
       <th>Apellidos</th>
       <th>iPasen</th>
+      <th>Detalle</th>
     </tr>
   </thead>
 
@@ -16,6 +17,7 @@
       <td>{{ alumno.nombre }}</td>
       <td>{{ alumno.apellidos }}</td>
       <td>{{ alumno.ipasen }}</td>
+      <td><a [routerLink]="['/alumno',alumno.id]" class="btn">Ver</a></td>
     </tr>
   </tbody>
 </table>

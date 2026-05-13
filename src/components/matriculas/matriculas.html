@@ -8,6 +8,7 @@
       <th>Nota media</th>
       <th>Alumno</th>
       <th>Asignatura</th>
+      <th>Detalle</th>
     </tr>
   </thead>
 
@@ -18,6 +19,7 @@
       <td>{{ matricula.notaMedia }}</td>
       <td>{{ matricula.alumno.nombre }}</td>
       <td>{{ matricula.asignatura.nombre }}</td>
+      <td><a [routerLink]="['/matricula',matricula.idMat]" class="btn">Ver</a></td>
     </tr>
   </tbody>
 </table>

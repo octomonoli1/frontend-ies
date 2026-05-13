@@ -1,11 +1,12 @@
 import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
+import { RouterLink } from '@angular/router';
 import { Alumno } from '../../model/alumno';
 import { AlumnoService } from '../../services/alumno-service';
 
 @Component({
   selector: 'app-alumnos',
-  imports: [CommonModule],
+  imports: [CommonModule, RouterLink],
   templateUrl: './alumnos.html',
   styleUrl: './alumnos.css',
 })
