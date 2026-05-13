@@ -17,12 +17,11 @@
 
 .btn{
   display: inline-block;
-  padding: 8px 16px;
+  padding: 2px 16px;
   background-color: #1976d2;
   color: white;
   text-decoration: none;
   border-radius: 6px;
-  font-weight: 500;
   transition: background-color 0.2s;
 }
 
