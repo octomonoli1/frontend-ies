@@ -1,27 +1,49 @@
+h2 {
+  margin-bottom: 20px;
+  color: #1976d2;
+}
+
 .detalle {
   display: flex;
-  gap: 20px;
+  gap: 30px;
   margin-top: 20px;
-  border: 1px solid #ccc;
-  padding: 20px;
-  border-radius: 6px;
+  border: 1px solid #ddd;
+  padding: 25px;
+  border-radius: 10px;
   background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 
 .foto {
-  flex: 0 0 150px;
+  flex: 0 0 180px;
+  text-align: center;
 }
 
 .foto img {
-  width: 150px;
-  height: 150px;
+  width: 170px;
+  height: 170px;
   object-fit: cover;
   border-radius: 50%;
-  border: 2px solid #1976d2;
+  border: 4px solid #1976d2;
 }
 
-.info {
+.contenido {
   flex: 1;
+}
+
+.seccion {
+  margin-bottom: 30px;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.seccion h3 {
+  margin: 0;
+  padding: 12px 15px;
+  background-color: #1976d2;
+  color: white;
+  font-size: 18px;
 }
 
 .campo {
@@ -34,16 +56,15 @@
 }
 
 .label {
-  width: 120px;
+  width: 180px;
   font-weight: bold;
-  padding: 10px;
-  background-color: #1976d2;
-  color: white;
+  padding: 12px;
+  background-color: #f5f5f5;
 }
 
 .valor {
   flex: 1;
-  padding: 10px;
+  padding: 12px;
 }
 
 .btn-volver {
@@ -51,10 +72,10 @@
   background-color: #1976d2;
   color: white;
   border: none;
-  padding: 8px 14px;
-  border-radius: 4px;
+  padding: 10px 18px;
+  border-radius: 6px;
   cursor: pointer;
-  display: inline-block;
+  transition: 0.3s;
 }
 
 .btn-volver:hover {
